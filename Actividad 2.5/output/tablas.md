@@ -1,0 +1,19 @@
+## Caso Xico → Oaxaca
+
+| Algoritmo            |   Costo (km) |   Nodos expandidos |   Nodos generados |   Frontera máx. |   Tiempo (ms) | ¿Óptima?   |
+|:---------------------|-------------:|-------------------:|------------------:|----------------:|--------------:|:-----------|
+| Dijkstra             |          450 |                 27 |                30 |               8 |         0.065 | Sí         |
+| A* (haversine)       |          450 |                 12 |                20 |               9 |         0.089 | Sí         |
+| A* ponderado (h×1.5) |          450 |                  8 |                15 |               8 |         0.065 | Sí         |
+| A* ponderado (h×3)   |          450 |                  5 |                10 |               6 |         0.042 | Sí         |
+
+Ruta óptima: Xico → Huatusco → Córdoba → Tehuacán → Oaxaca
+
+## Resumen en todos los pares origen-destino
+
+| algoritmo            |   expandidos_prom |   generados_prom |   frontera_max_prom |   tiempo_ms_prom |   rutas_optimas_pct |   sobrecosto_prom_pct |   sobrecosto_max_pct |
+|:---------------------|------------------:|-----------------:|--------------------:|-----------------:|--------------------:|----------------------:|---------------------:|
+| Dijkstra             |            15.5   |           20.547 |               7.82  |            0.043 |             100     |                 0     |                 0    |
+| A* (haversine)       |             9.15  |           14.569 |               7.005 |            0.068 |             100     |                 0     |                 0    |
+| A* ponderado (h×1.5) |             6.464 |           12.379 |               7.086 |            0.055 |              95.567 |                 0.107 |                10    |
+| A* ponderado (h×3)   |             5.159 |           11.149 |               7     |            0.048 |              83.005 |                 1.64  |                48.78 |

@@ -1,0 +1,5 @@
+Algoritmo,Costo (km),Nodos expandidos,Nodos generados,Frontera máx.,Tiempo (ms),¿Óptima?,Ruta
+Dijkstra,450.0,27,30,8,0.065,Sí,Xico → Huatusco → Córdoba → Tehuacán → Oaxaca
+A* (haversine),450.0,12,20,9,0.089,Sí,Xico → Huatusco → Córdoba → Tehuacán → Oaxaca
+A* ponderado (h×1.5),450.0,8,15,8,0.065,Sí,Xico → Huatusco → Córdoba → Tehuacán → Oaxaca
+A* ponderado (h×3),450.0,5,10,6,0.042,Sí,Xico → Huatusco → Córdoba → Tehuacán → Oaxaca
